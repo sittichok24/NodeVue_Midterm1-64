@@ -1,19 +1,18 @@
 <template>
   <div>
-    <h1>Get All Users</h1>
+    <h1>Bus Lines</h1>
     <div v-if="users.length">
-      <h4>จำนวนผู้ใช้งาน {{ users.length }}</h4>
+      <h4>จำนวนสายรถเมล์ {{ users.length }}</h4>
       <p>
         <button v-on:click="navigateTo('/user/create')">
-            สร้างผู้ใช้งาน
+            สร้างสายรถเมล์
           </button>
       </p>
       <div v-for="user in users" v-bind:key="user.id">
-        <p>id: {{ user.id }}</p>
-        <p>ชื่อ-นามสกุล: {{ user.name }} - {{ user.lastname }}</p>
-        <p>Email: {{ user.email }}</p>
-        <p>Password: {{ user.password }}</p>
-        <p>
+       <p>ชื่อสายรถเมล์ : {{user.name}}</p>
+        <p>หมายเลขทะเบียนรถ : {{user.lastname}}</p>
+        <p>ชื่อผู้ขับ : {{user.email}}</p>
+        <p>เบอร์ติดต่อ : {{user.password}}</p>
           <button v-on:click="navigateTo('/user/' + user.id)">
             ดูข้อมูลผู้ใช้
           </button>
@@ -23,7 +22,7 @@
           <button v-on:click="deleteUser(user)">
             ลบข้อมูล
           </button>
-        </p>
+       <p> </p>
         <hr />
       </div>
     </div>

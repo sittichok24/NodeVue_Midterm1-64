@@ -1,19 +1,19 @@
 <template>
 <div>
-    <h1>Create User</h1>
+    <h1>Create Bus Lines</h1>
     <form v-on:submit.prevent = "createUser">
-        <p>name: <input type="text" v-model="user.name"></p>
-        <p>lastname: <input type="text" v-model="user.lastname"></p>
-        <p>email: <input type="text" v-model="user.email"></p>
-        <p>password: <input type="text" v-model="user.password"></p>
-        <p><button type="submit">create user</button></p>
+        <p>ชื่อสายรถเมล์ : <input type="text" v-model="user.name"></p>
+        <p>หมายเลขทะเบียนรถ : <input type="text" v-model="user.lastname"></p>
+        <p>ชื่อผู้ขับ : <input type="text" v-model="user.email"></p>
+        <p>เบอร์ติดต่อ : <input type="text" v-model="user.password"></p>
+        <p><button type="submit">สร้างสายรถเมล์</button></p>
     </form>
     <hr>
     <div>
-        <p>name: {{user.name}}</p>
-        <p>lastname: {{user.lastname}}</p>
-        <p>email: {{user.email}}</p>
-        <p>password: {{user.password}}</p>
+        <p>ชื่อสายรถเมล์ : {{user.name}}</p>
+        <p>หมายเลขทะเบียนรถ : {{user.lastname}}</p>
+        <p>ชื่อผู้ขับ : {{user.email}}</p>
+        <p>เบอร์ติดต่อ : {{user.password}}</p>
     </div>
 </div>
 </template>

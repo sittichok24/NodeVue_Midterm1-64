@@ -1,10 +1,11 @@
 <template>
   <div>
-    <h1>Show User</h1>
+    <h1>ข้อมูลสายรถเมล์</h1>
     <p>id: {{ userId }}</p>
-    <p>ชื่อ - นามสกุล {{ user.name }} - {{ user.lastname }}</p>
-    <p>email: {{ user.email }}</p>
-    <p>password: {{ user.password }}</p>
+    <p>ชื่อสายรถเมล์ :  {{ user.name }} </p>
+    <p>หมายเลขทะเบียนรถ :  {{ user.lastname }} </p>
+    <p>ชื่อผู้ขับ : {{ user.email }}</p>
+    <p>เบอร์ติดต่อ : {{ user.password }}</p>
   </div>
 </template>
 <script>
